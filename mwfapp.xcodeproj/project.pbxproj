@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9B5513B15055E5A00504652 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B5513A15055E5A00504652 /* UIKit.framework */; };
+		A9B5513D15055E5A00504652 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B5513C15055E5A00504652 /* Foundation.framework */; };
+		A9B5513F15055E5A00504652 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B5513E15055E5A00504652 /* CoreGraphics.framework */; };
+		A9B5514115055E5A00504652 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B5514015055E5A00504652 /* CoreData.framework */; };
+		A9B5514715055E5A00504652 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9B5514515055E5A00504652 /* InfoPlist.strings */; };
+		A9B5514915055E5B00504652 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5514815055E5B00504652 /* main.m */; };
+		A9B5514D15055E5B00504652 /* mwfappAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5514C15055E5B00504652 /* mwfappAppDelegate.m */; };
+		A9B5515015055E5B00504652 /* mwfapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9B5514E15055E5B00504652 /* mwfapp.xcdatamodeld */; };
+		A9B5515315055E5C00504652 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B5515115055E5C00504652 /* MainWindow.xib */; };
+		A9B5515615055E5C00504652 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5515515055E5C00504652 /* DetailViewController.m */; };
+		A9B5515915055E5C00504652 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B5515715055E5C00504652 /* DetailView.xib */; };
+		A9B5515C15055E5C00504652 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5515B15055E5C00504652 /* RootViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A9B5513615055E5A00504652 /* mwfapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mwfapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B5513A15055E5A00504652 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9B5513C15055E5A00504652 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9B5513E15055E5A00504652 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A9B5514015055E5A00504652 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A9B5514415055E5A00504652 /* mwfapp-Info.plist */ = {isa = PBXFileReference; path = "mwfapp-Info.plist"; sourceTree = "<group>"; };
+		A9B5514615055E5A00504652 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9B5514815055E5B00504652 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9B5514A15055E5B00504652 /* mwfapp-Prefix.pch */ = {isa = PBXFileReference; path = "mwfapp-Prefix.pch"; sourceTree = "<group>"; };
+		A9B5514B15055E5B00504652 /* mwfappAppDelegate.h */ = {isa = PBXFileReference; path = mwfappAppDelegate.h; sourceTree = "<group>"; };
+		A9B5514C15055E5B00504652 /* mwfappAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mwfappAppDelegate.m; sourceTree = "<group>"; };
+		A9B5514F15055E5B00504652 /* mwfapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mwfapp.xcdatamodel; sourceTree = "<group>"; };
+		A9B5515215055E5C00504652 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		A9B5515415055E5C00504652 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		A9B5515515055E5C00504652 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		A9B5515815055E5C00504652 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailView.xib; sourceTree = "<group>"; };
+		A9B5515A15055E5C00504652 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		A9B5515B15055E5C00504652 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9B5513315055E5900504652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B5513B15055E5A00504652 /* UIKit.framework in Frameworks */,
+				A9B5513D15055E5A00504652 /* Foundation.framework in Frameworks */,
+				A9B5513F15055E5A00504652 /* CoreGraphics.framework in Frameworks */,
+				A9B5514115055E5A00504652 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9B5512B15055E5800504652 = {
+			isa = PBXGroup;
+			children = (
+				A9B5514215055E5A00504652 /* mwfapp */,
+				A9B5513915055E5A00504652 /* Frameworks */,
+				A9B5513715055E5A00504652 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9B5513715055E5A00504652 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9B5513615055E5A00504652 /* mwfapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9B5513915055E5A00504652 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9B5513A15055E5A00504652 /* UIKit.framework */,
+				A9B5513C15055E5A00504652 /* Foundation.framework */,
+				A9B5513E15055E5A00504652 /* CoreGraphics.framework */,
+				A9B5514015055E5A00504652 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9B5514215055E5A00504652 /* mwfapp */ = {
+			isa = PBXGroup;
+			children = (
+				A9B5514B15055E5B00504652 /* mwfappAppDelegate.h */,
+				A9B5514C15055E5B00504652 /* mwfappAppDelegate.m */,
+				A9B5515115055E5C00504652 /* MainWindow.xib */,
+				A9B5515415055E5C00504652 /* DetailViewController.h */,
+				A9B5515515055E5C00504652 /* DetailViewController.m */,
+				A9B5515715055E5C00504652 /* DetailView.xib */,
+				A9B5515A15055E5C00504652 /* RootViewController.h */,
+				A9B5515B15055E5C00504652 /* RootViewController.m */,
+				A9B5514E15055E5B00504652 /* mwfapp.xcdatamodeld */,
+				A9B5514315055E5A00504652 /* Supporting Files */,
+			);
+			path = mwfapp;
+			sourceTree = "<group>";
+		};
+		A9B5514315055E5A00504652 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9B5514415055E5A00504652 /* mwfapp-Info.plist */,
+				A9B5514515055E5A00504652 /* InfoPlist.strings */,
+				A9B5514815055E5B00504652 /* main.m */,
+				A9B5514A15055E5B00504652 /* mwfapp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9B5513515055E5900504652 /* mwfapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9B5515F15055E5C00504652 /* Build configuration list for PBXNativeTarget "mwfapp" */;
+			buildPhases = (
+				A9B5513215055E5900504652 /* Sources */,
+				A9B5513315055E5900504652 /* Frameworks */,
+				A9B5513415055E5900504652 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mwfapp;
+			productName = mwfapp;
+			productReference = A9B5513615055E5A00504652 /* mwfapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9B5512D15055E5800504652 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Twinergy;
+			};
+			buildConfigurationList = A9B5513015055E5800504652 /* Build configuration list for PBXProject "mwfapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A9B5512B15055E5800504652;
+			productRefGroup = A9B5513715055E5A00504652 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9B5513515055E5900504652 /* mwfapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9B5513415055E5900504652 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B5514715055E5A00504652 /* InfoPlist.strings in Resources */,
+				A9B5515315055E5C00504652 /* MainWindow.xib in Resources */,
+				A9B5515915055E5C00504652 /* DetailView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9B5513215055E5900504652 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B5514915055E5B00504652 /* main.m in Sources */,
+				A9B5514D15055E5B00504652 /* mwfappAppDelegate.m in Sources */,
+				A9B5515015055E5B00504652 /* mwfapp.xcdatamodeld in Sources */,
+				A9B5515615055E5C00504652 /* DetailViewController.m in Sources */,
+				A9B5515C15055E5C00504652 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A9B5514515055E5A00504652 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9B5514615055E5A00504652 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A9B5515115055E5C00504652 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9B5515215055E5C00504652 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		A9B5515715055E5C00504652 /* DetailView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9B5515815055E5C00504652 /* en */,
+			);
+			name = DetailView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9B5515D15055E5C00504652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A9B5515E15055E5C00504652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9B5516015055E5C00504652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mwfapp/mwfapp-Prefix.pch";
+				INFOPLIST_FILE = "mwfapp/mwfapp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A9B5516115055E5C00504652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mwfapp/mwfapp-Prefix.pch";
+				INFOPLIST_FILE = "mwfapp/mwfapp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9B5513015055E5800504652 /* Build configuration list for PBXProject "mwfapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B5515D15055E5C00504652 /* Debug */,
+				A9B5515E15055E5C00504652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9B5515F15055E5C00504652 /* Build configuration list for PBXNativeTarget "mwfapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B5516015055E5C00504652 /* Debug */,
+				A9B5516115055E5C00504652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A9B5514E15055E5B00504652 /* mwfapp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A9B5514F15055E5B00504652 /* mwfapp.xcdatamodel */,
+			);
+			currentVersion = A9B5514F15055E5B00504652 /* mwfapp.xcdatamodel */;
+			path = mwfapp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A9B5512D15055E5800504652 /* Project object */;
+}
