@@ -16,9 +16,24 @@
 		A9B5514D15055E5B00504652 /* mwfappAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5514C15055E5B00504652 /* mwfappAppDelegate.m */; };
 		A9B5515015055E5B00504652 /* mwfapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9B5514E15055E5B00504652 /* mwfapp.xcdatamodeld */; };
 		A9B5515315055E5C00504652 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B5515115055E5C00504652 /* MainWindow.xib */; };
-		A9B5515615055E5C00504652 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5515515055E5C00504652 /* DetailViewController.m */; };
 		A9B5515915055E5C00504652 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B5515715055E5C00504652 /* DetailView.xib */; };
-		A9B5515C15055E5C00504652 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5515B15055E5C00504652 /* RootViewController.m */; };
+		A9B5516415055EC500504652 /* SyncService.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5516315055EC500504652 /* SyncService.m */; };
+		A9B5516715055F6300504652 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5516615055F6300504652 /* DetailViewController.m */; };
+		A9B5518615055FD200504652 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5516A15055FD200504652 /* NSObject+SBJson.m */; };
+		A9B5518715055FD200504652 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5516C15055FD200504652 /* RootViewController.m */; };
+		A9B5518815055FD200504652 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5516F15055FD200504652 /* SBJsonParser.m */; };
+		A9B5518915055FD200504652 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5517115055FD200504652 /* SBJsonStreamParser.m */; };
+		A9B5518A15055FD200504652 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5517315055FD200504652 /* SBJsonStreamParserAccumulator.m */; };
+		A9B5518B15055FD200504652 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5517515055FD200504652 /* SBJsonStreamParserAdapter.m */; };
+		A9B5518C15055FD200504652 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5517715055FD200504652 /* SBJsonStreamParserState.m */; };
+		A9B5518D15055FD200504652 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5517915055FD200504652 /* SBJsonStreamWriter.m */; };
+		A9B5518E15055FD200504652 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5517B15055FD200504652 /* SBJsonStreamWriterAccumulator.m */; };
+		A9B5518F15055FD200504652 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5517D15055FD200504652 /* SBJsonStreamWriterState.m */; };
+		A9B5519015055FD200504652 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5517F15055FD200504652 /* SBJsonTokeniser.m */; };
+		A9B5519115055FD200504652 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5518115055FD200504652 /* SBJsonUTF8Stream.m */; };
+		A9B5519215055FD200504652 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5518315055FD200504652 /* SBJsonWriter.m */; };
+		A9B5519315055FD200504652 /* WItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5518515055FD200504652 /* WItem.m */; };
+		A9FB88A71505644700AD6F16 /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB88A61505644700AD6F16 /* DataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,19 +42,51 @@
 		A9B5513C15055E5A00504652 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A9B5513E15055E5A00504652 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A9B5514015055E5A00504652 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		A9B5514415055E5A00504652 /* mwfapp-Info.plist */ = {isa = PBXFileReference; path = "mwfapp-Info.plist"; sourceTree = "<group>"; };
+		A9B5514415055E5A00504652 /* mwfapp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mwfapp-Info.plist"; sourceTree = "<group>"; };
 		A9B5514615055E5A00504652 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9B5514815055E5B00504652 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A9B5514A15055E5B00504652 /* mwfapp-Prefix.pch */ = {isa = PBXFileReference; path = "mwfapp-Prefix.pch"; sourceTree = "<group>"; };
-		A9B5514B15055E5B00504652 /* mwfappAppDelegate.h */ = {isa = PBXFileReference; path = mwfappAppDelegate.h; sourceTree = "<group>"; };
+		A9B5514A15055E5B00504652 /* mwfapp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mwfapp-Prefix.pch"; sourceTree = "<group>"; };
+		A9B5514B15055E5B00504652 /* mwfappAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mwfappAppDelegate.h; sourceTree = "<group>"; };
 		A9B5514C15055E5B00504652 /* mwfappAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mwfappAppDelegate.m; sourceTree = "<group>"; };
 		A9B5514F15055E5B00504652 /* mwfapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mwfapp.xcdatamodel; sourceTree = "<group>"; };
 		A9B5515215055E5C00504652 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		A9B5515415055E5C00504652 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
-		A9B5515515055E5C00504652 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		A9B5515815055E5C00504652 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailView.xib; sourceTree = "<group>"; };
-		A9B5515A15055E5C00504652 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
-		A9B5515B15055E5C00504652 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		A9B5516215055EBA00504652 /* SyncService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncService.h; sourceTree = "<group>"; };
+		A9B5516315055EC500504652 /* SyncService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncService.m; sourceTree = "<group>"; };
+		A9B5516515055F5800504652 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		A9B5516615055F6300504652 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		A9B5516815055F9700504652 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		A9B5516915055FD200504652 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		A9B5516A15055FD200504652 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		A9B5516B15055FD200504652 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		A9B5516C15055FD200504652 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		A9B5516D15055FD200504652 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		A9B5516E15055FD200504652 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		A9B5516F15055FD200504652 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		A9B5517015055FD200504652 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		A9B5517115055FD200504652 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		A9B5517215055FD200504652 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		A9B5517315055FD200504652 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		A9B5517415055FD200504652 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		A9B5517515055FD200504652 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		A9B5517615055FD200504652 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		A9B5517715055FD200504652 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		A9B5517815055FD200504652 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		A9B5517915055FD200504652 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		A9B5517A15055FD200504652 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		A9B5517B15055FD200504652 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		A9B5517C15055FD200504652 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		A9B5517D15055FD200504652 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		A9B5517E15055FD200504652 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		A9B5517F15055FD200504652 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		A9B5518015055FD200504652 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		A9B5518115055FD200504652 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		A9B5518215055FD200504652 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		A9B5518315055FD200504652 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		A9B5518415055FD200504652 /* WItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WItem.h; sourceTree = "<group>"; };
+		A9B5518515055FD200504652 /* WItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WItem.m; sourceTree = "<group>"; };
+		A9FB88A41505643B00AD6F16 /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
+		A9FB88A61505644700AD6F16 /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,14 +135,46 @@
 		A9B5514215055E5A00504652 /* mwfapp */ = {
 			isa = PBXGroup;
 			children = (
+				A9FB88A61505644700AD6F16 /* DataController.m */,
+				A9FB88A41505643B00AD6F16 /* DataController.h */,
+				A9B5516915055FD200504652 /* NSObject+SBJson.h */,
+				A9B5516A15055FD200504652 /* NSObject+SBJson.m */,
+				A9B5516B15055FD200504652 /* RootViewController.h */,
+				A9B5516C15055FD200504652 /* RootViewController.m */,
+				A9B5516D15055FD200504652 /* SBJson.h */,
+				A9B5516E15055FD200504652 /* SBJsonParser.h */,
+				A9B5516F15055FD200504652 /* SBJsonParser.m */,
+				A9B5517015055FD200504652 /* SBJsonStreamParser.h */,
+				A9B5517115055FD200504652 /* SBJsonStreamParser.m */,
+				A9B5517215055FD200504652 /* SBJsonStreamParserAccumulator.h */,
+				A9B5517315055FD200504652 /* SBJsonStreamParserAccumulator.m */,
+				A9B5517415055FD200504652 /* SBJsonStreamParserAdapter.h */,
+				A9B5517515055FD200504652 /* SBJsonStreamParserAdapter.m */,
+				A9B5517615055FD200504652 /* SBJsonStreamParserState.h */,
+				A9B5517715055FD200504652 /* SBJsonStreamParserState.m */,
+				A9B5517815055FD200504652 /* SBJsonStreamWriter.h */,
+				A9B5517915055FD200504652 /* SBJsonStreamWriter.m */,
+				A9B5517A15055FD200504652 /* SBJsonStreamWriterAccumulator.h */,
+				A9B5517B15055FD200504652 /* SBJsonStreamWriterAccumulator.m */,
+				A9B5517C15055FD200504652 /* SBJsonStreamWriterState.h */,
+				A9B5517D15055FD200504652 /* SBJsonStreamWriterState.m */,
+				A9B5517E15055FD200504652 /* SBJsonTokeniser.h */,
+				A9B5517F15055FD200504652 /* SBJsonTokeniser.m */,
+				A9B5518015055FD200504652 /* SBJsonUTF8Stream.h */,
+				A9B5518115055FD200504652 /* SBJsonUTF8Stream.m */,
+				A9B5518215055FD200504652 /* SBJsonWriter.h */,
+				A9B5518315055FD200504652 /* SBJsonWriter.m */,
+				A9B5518415055FD200504652 /* WItem.h */,
+				A9B5518515055FD200504652 /* WItem.m */,
+				A9B5516815055F9700504652 /* JSON.h */,
+				A9B5516615055F6300504652 /* DetailViewController.m */,
+				A9B5516515055F5800504652 /* DetailViewController.h */,
+				A9B5516315055EC500504652 /* SyncService.m */,
+				A9B5516215055EBA00504652 /* SyncService.h */,
 				A9B5514B15055E5B00504652 /* mwfappAppDelegate.h */,
 				A9B5514C15055E5B00504652 /* mwfappAppDelegate.m */,
 				A9B5515115055E5C00504652 /* MainWindow.xib */,
-				A9B5515415055E5C00504652 /* DetailViewController.h */,
-				A9B5515515055E5C00504652 /* DetailViewController.m */,
 				A9B5515715055E5C00504652 /* DetailView.xib */,
-				A9B5515A15055E5C00504652 /* RootViewController.h */,
-				A9B5515B15055E5C00504652 /* RootViewController.m */,
 				A9B5514E15055E5B00504652 /* mwfapp.xcdatamodeld */,
 				A9B5514315055E5A00504652 /* Supporting Files */,
 			);
@@ -179,8 +258,23 @@
 				A9B5514915055E5B00504652 /* main.m in Sources */,
 				A9B5514D15055E5B00504652 /* mwfappAppDelegate.m in Sources */,
 				A9B5515015055E5B00504652 /* mwfapp.xcdatamodeld in Sources */,
-				A9B5515615055E5C00504652 /* DetailViewController.m in Sources */,
-				A9B5515C15055E5C00504652 /* RootViewController.m in Sources */,
+				A9B5516415055EC500504652 /* SyncService.m in Sources */,
+				A9B5516715055F6300504652 /* DetailViewController.m in Sources */,
+				A9B5518615055FD200504652 /* NSObject+SBJson.m in Sources */,
+				A9B5518715055FD200504652 /* RootViewController.m in Sources */,
+				A9B5518815055FD200504652 /* SBJsonParser.m in Sources */,
+				A9B5518915055FD200504652 /* SBJsonStreamParser.m in Sources */,
+				A9B5518A15055FD200504652 /* SBJsonStreamParserAccumulator.m in Sources */,
+				A9B5518B15055FD200504652 /* SBJsonStreamParserAdapter.m in Sources */,
+				A9B5518C15055FD200504652 /* SBJsonStreamParserState.m in Sources */,
+				A9B5518D15055FD200504652 /* SBJsonStreamWriter.m in Sources */,
+				A9B5518E15055FD200504652 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				A9B5518F15055FD200504652 /* SBJsonStreamWriterState.m in Sources */,
+				A9B5519015055FD200504652 /* SBJsonTokeniser.m in Sources */,
+				A9B5519115055FD200504652 /* SBJsonUTF8Stream.m in Sources */,
+				A9B5519215055FD200504652 /* SBJsonWriter.m in Sources */,
+				A9B5519315055FD200504652 /* WItem.m in Sources */,
+				A9FB88A71505644700AD6F16 /* DataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +313,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marco Madau (479BLG4323)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -231,6 +326,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "2F2FA09B-F8E5-47D0-B212-9BD8098EE6E0";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -241,6 +337,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marco Madau (479BLG4323)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -250,6 +347,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "2F2FA09B-F8E5-47D0-B212-9BD8098EE6E0";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -297,6 +395,7 @@
 				A9B5516115055E5C00504652 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

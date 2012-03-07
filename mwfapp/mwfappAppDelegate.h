@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class RootViewController;
-
+@class DataController;
 @class DetailViewController;
 
 @interface mwfappAppDelegate : NSObject <UIApplicationDelegate>
@@ -19,6 +19,8 @@
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+@property (nonatomic, retain) DataController *dataController;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;

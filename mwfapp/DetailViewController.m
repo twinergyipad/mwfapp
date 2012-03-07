@@ -1,8 +1,8 @@
 //
 //  DetailViewController.m
-//  mwfapp
+//  MWF_App
 //
-//  Created by Marco Madau on 3/5/12.
+//  Created by Marco Madau on 2/28/12.
 //  Copyright 2012 Twinergy. All rights reserved.
 //
 
@@ -10,12 +10,17 @@
 
 #import "RootViewController.h"
 
+#import "DataController.h"
+#import "WItem.h"
+
 @interface DetailViewController ()
 @property (nonatomic, retain) UIPopoverController *popoverController;
 - (void)configureView;
 @end
 
 @implementation DetailViewController
+
+@synthesize witem;
 
 @synthesize toolbar = _toolbar;
 @synthesize detailItem = _detailItem;
@@ -48,7 +53,7 @@
     // Update the user interface for the detail item.
 
     // Normally should use accessor method, but using KVC here avoids adding a custom class to the template.
-    self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
+    self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"witext"] description];
 }
 
 - (void)viewWillAppear:(BOOL)animated

@@ -1,8 +1,8 @@
 //
 //  DetailViewController.h
-//  mwfapp
+//  MWF_App
 //
-//  Created by Marco Madau on 3/5/12.
+//  Created by Marco Madau on 2/28/12.
 //  Copyright 2012 Twinergy. All rights reserved.
 //
 
@@ -10,7 +10,11 @@
 
 #import <CoreData/CoreData.h>
 
+
+
 @class RootViewController;
+@class WItem;
+
 
 @interface DetailViewController : UIViewController <UIPopoverControllerDelegate, UISplitViewControllerDelegate>
 
@@ -21,6 +25,8 @@
 @property (nonatomic, retain) IBOutlet UILabel *detailDescriptionLabel;
 
 @property (nonatomic, assign) IBOutlet RootViewController *rootViewController;
+
+@property (nonatomic, assign) WItem *witem;
 
 - (IBAction)insertNewObject:(id)sender;
 

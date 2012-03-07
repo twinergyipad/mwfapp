@@ -1,14 +1,15 @@
 //
 //  RootViewController.m
-//  mwfapp
+//  MWF_App
 //
-//  Created by Marco Madau on 3/5/12.
+//  Created by Marco Madau on 2/28/12.
 //  Copyright 2012 Twinergy. All rights reserved.
 //
 
 #import "RootViewController.h"
-
 #import "DetailViewController.h"
+#import "WItem.h"
+#import "DataController.h"
 
 @interface RootViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -20,12 +21,14 @@
 @synthesize fetchedResultsController;
 @synthesize managedObjectContext;
 
+@synthesize dataController;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.clearsSelectionOnViewWillAppear = NO;
     self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
-    NSError *error = nil;
+    self.title = NSLocalizedString(@"WItems", @"Master view");    NSError *error = nil;
     if (![[self fetchedResultsController] performFetch:&error]) {
         /*
          Replace this implementation with code to handle the error appropriately.
@@ -35,6 +38,7 @@
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
+    //if (dataController == NULL)  dataController = [[DataController alloc] init]; 
 }
 
 		
@@ -64,15 +68,20 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+    /*
     return [[fetchedResultsController sections] count];
+     */
+    return 1;
 }
 
 		
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    /*
     id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedResultsController sections] objectAtIndex:section];
     return [sectionInfo numberOfObjects];
-}
+    */
+    return [dataController countOfList];}
 
 		
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -83,9 +92,13 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
-
+    
+    WItem *witemAtIndex = [dataController objectInListAtIndex:indexPath.row];
+    
+    cell.textLabel.text = witemAtIndex.witext;
+    
     // Configure the cell.
-    [self configureCell:cell atIndexPath:indexPath];
+    // [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
 
@@ -128,8 +141,13 @@
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Set the detail item in the detail view controller.
+    /*
     NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
     detailViewController.detailItem = selectedObject;    
+     */
+    
+    WItem *witemAtIndex = [dataController objectInListAtIndex:indexPath.row];
+    detailViewController.detailItem = witemAtIndex;
 }
 
 - (void)didReceiveMemoryWarning

@@ -12,15 +12,19 @@
 
 #import "DetailViewController.h"
 
+#import "DataController.h"
+
 @implementation mwfappAppDelegate
 
 @synthesize window = _window;
+
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 @synthesize splitViewController = _splitViewController;
 @synthesize rootViewController = _rootViewController;
 @synthesize detailViewController = _detailViewController;
+@synthesize dataController=_dataController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -28,6 +32,11 @@
     // Add the split view controller's view to the window and display.
     self.window.rootViewController = self.splitViewController;
     [self.window makeKeyAndVisible];
+    
+    DataController *controller = [[DataController alloc] init];
+    self.rootViewController.dataController = controller;
+    self.dataController = controller;    
+    
     return YES;
 }
 
