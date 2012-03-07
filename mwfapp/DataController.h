@@ -5,7 +5,7 @@
 //  Created by Marco Madau on 3/2/12.
 //  Copyright 2012 Twinergy. All rights reserved.
 //
-// GITHUB yeahhh
+// GITHUB yeahhh 2.0
 
 #import <Foundation/Foundation.h>
 
